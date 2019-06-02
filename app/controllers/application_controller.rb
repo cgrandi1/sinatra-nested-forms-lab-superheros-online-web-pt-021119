@@ -21,7 +21,11 @@ class App < Sinatra::Base
 
       @hero_2n = params[:team][:members][1][:name]
       @hero_2p = params[:team][:members][1][:power]
-      @hero_2b = params[:team][:members][2][:bio]
+      @hero_2b = params[:team][:members][1][:bio]
+
+      @hero_3n = params[:team][:members][2][:name]
+      @hero_3p = params[:team][:members][2][:power]
+      @hero_3b = params[:team][:members][2][:bio]
 
 
 
