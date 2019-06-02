@@ -15,17 +15,17 @@ class App < Sinatra::Base
 
       @team_name = params[:team][:name]
       @team_motto = params[:team][:motto]
-      @hero_1n = params[:team][:members][0][:name]
-      @hero_1p = params[:team][:members][0][:power]
-      @hero_1b = params[:team][:members][0][:bio]
+      @hero_1n = params[:team][:member][0][:name]
+      @hero_1p = params[:team][:member][0][:power]
+      @hero_1b = params[:team][:member][0][:bio]
 
-      @hero_2n = params[:team][:members][1][:name]
-      @hero_2p = params[:team][:members][1][:power]
-      @hero_2b = params[:team][:members][1][:bio]
+      @hero_2n = params[:team][:member][1][:name]
+      @hero_2p = params[:team][:member][1][:power]
+      @hero_2b = params[:team][:member][1][:bio]
 
-      @hero_3n = params[:team][:members][2][:name]
-      @hero_3p = params[:team][:members][2][:power]
-      @hero_3b = params[:team][:members][2][:bio]
+      @hero_3n = params[:team][:member][2][:name]
+      @hero_3p = params[:team][:member][2][:power]
+      @hero_3b = params[:team][:member][2][:bio]
 
 
 
