@@ -13,7 +13,7 @@ class App < Sinatra::Base
       # binding.pry
 
 
-      @team_name = params["team"]["name"]
+      @team_name = params[:team][:name]
       @team_motto = params[:team][:motto]
       @hero_1n = params[:team][:members][0][:name]
       @hero_1p = params[:team][:members][0][:power]
