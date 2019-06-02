@@ -10,6 +10,8 @@ class App < Sinatra::Base
 
     post '/teams' do
       binding.pry
+
+      
     end
 
 end
