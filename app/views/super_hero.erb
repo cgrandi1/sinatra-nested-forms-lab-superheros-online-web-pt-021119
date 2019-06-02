@@ -1,19 +1,44 @@
-<body>
+<html>
+<h1>Create a Team and Heroes!</h1>
+  <form action='/teams' method='POST'>
+    <label for="name">Team Name:</label>
+    <input type="text" id="name" name="team[name]"></input><br>
 
-<%=@team_name%>
+    <label for="motto">Team Motto:</label>
+    <input type="text" id="motto" name="team[motto]"></input>
 
-<h1>Team Motto:><%=@team_motto%>
+<h2>Hero 1</h2>
+    <label for="member1_name">Hero's Name:</label>
+    <input type=text id="member1_name" name="team[member][][name]"></input><br>
 
-<h2><%=@hero_1n%></h1><br>
-  <p> Hero Power:<%=@hero_1p%></p>
-  <p> Hero Biography:<%=@hero_1b%></p>
+    <label for="member1_power">Hero's Power:</label>
+    <input type="text" id="member1_power" name="team[member][][power]"></input><br>
 
-<h2><%=@hero_2n%></h2><br>
-  <p> Hero Power:<%=@hero_2p%></p>
-  <p> Hero Biography:<%=@hero_2b%></p>
+    <label for="member1_bio">Hero's Biography:</label>
+    <input type="text" id="member1_bio" name="team[member[][bio]"></input><br>
 
-<h3><%=@hero_3n%></h3><br>
-  <p> Hero Power:<%=@hero_3p%></p>
-  <p> Hero Biography:<%=@hero_3b%></p>
+<h3>Hero 2</h3>
+    <label for="member2_name">Hero's Name:</label>
+    <input type=text id="member2_name" name="team[member[][name]"></input><br>
 
-</body>
+    <label for="member2_power">Hero's Power:</label>
+    <input type="text" id="member2_power" name="team[member[][power]"></input><br>
+
+    <label for="member2_bio">Hero's Biography:</label>
+    <input type="text" id="member2_bio" name="team[member[][bio]"></input><br>
+
+<h4>Hero 3</h4>
+    <label for="member3_name">Hero's Name:</label>
+    <input type=text id="member3_name" name="team[member[][name]"></input><br>
+
+    <label for="member3_power">Hero's Power:</label>
+    <input type="text" id="member3_power" name="team[member[][power]"></input><br>
+
+    <label for="member2_bio">Hero's Biography:</label>
+    <input type="text" id="member3_bio" name="team[member[][bio]"></input><br>
+
+    <br><input type="submit" value="submit">
+
+  </form>
+
+</html>
