@@ -29,7 +29,7 @@ class App < Sinatra::Base
 
 
 
-      erb :teams
+      erb :super_hero
 
     end
 
